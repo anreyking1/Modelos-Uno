@@ -42,8 +42,8 @@ public class EjemploProxy implements Ejemplo{
     }
     
 }
-/<pre>
-/<code>
+</pre>
+</code>
 
 ## Model
 ![Model](proxy.png)
