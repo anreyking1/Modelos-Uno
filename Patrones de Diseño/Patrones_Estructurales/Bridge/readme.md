@@ -36,7 +36,7 @@ public class EjemploBridge implements Ejemplo{
     }
     
 }
-<pre><code>
+</pre></code>
 ## Model
 ![Model](Bridge.PNG)
 
