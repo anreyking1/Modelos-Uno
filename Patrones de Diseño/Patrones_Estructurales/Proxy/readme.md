@@ -19,7 +19,31 @@ Es decir, los servidores proxy funcionan como filtros de contenidos. Y también 
 
 Este mismo concepto se intenta llevarlo a cabo a nivel código con el patrón Proxy. Cuando un objeto debe ser controlado de alguna manera, ya sea por simple control de acceso o por estar en un sitio remoto o por ser muy pesado y se quiera limitar su uso, es ideal utilizar este patrón.
 " [GoF]
+<pre><code>
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.estructurales.proxy;
 
+import patrones.Ejemplo;
+
+/**
+ *
+ * @author daza
+ */
+public class EjemploProxy implements Ejemplo{
+
+    @Override
+    public void operacion() {
+        Proxy p = new Proxy();
+        for(int i=0; i<10; i++)
+            System.out.println(p.doAction());
+    }
+    
+}
+/<pre>
+/<code>
 
 ## Model
 ![Model](proxy.png)
