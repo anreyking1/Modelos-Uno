@@ -16,5 +16,5 @@ de diseño.
 # INTEGRANTES
 
 * Andres Reyes 20142020103
-* Carlos Fuentes 20142020107
+* Camilo Ramirez 2014202078
 * Daniel Camargo 20142020094
