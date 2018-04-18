@@ -10,7 +10,7 @@ Se busca determinar dinámicamente que métodos de otros objetos llama un objeto
 No se quiere que el objeto llamado tenga conocimientos de la otra clase de objetos."
 
 ## Model
-![Model](Adapter.png)
+![Model](Adapter.PNG)
 
 ## Example
 
