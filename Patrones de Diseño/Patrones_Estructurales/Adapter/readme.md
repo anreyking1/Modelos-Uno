@@ -48,8 +48,8 @@ public class EjemploAdapter implements Ejemplo{
     }
     
 }
-<code>
-  <pre><code>
+
+
   /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -86,8 +86,9 @@ public class GuitarraAcustica {
         System.out.println("cansado de tocar guitarra");
     }
 }
-<code>
-  <pre><code>
+
+
+
   /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -110,8 +111,9 @@ public class GuitarraElectrica extends Guitarra {
         System.out.println("cansado de tocar guitarra");
     }
 }
-<code>
-  <pre><code>
+
+
+
   /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
