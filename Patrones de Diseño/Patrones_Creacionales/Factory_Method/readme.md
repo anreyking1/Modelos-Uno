@@ -1,12 +1,12 @@
 # Factory Method
 
 
-__ "Defina una interfaz para crear un objeto, pero deje que las subclases decidan a qué clase instanciar. Factory Method permite que una clase retrase la creación de instancias en subclases." __ [GoF]
-Este patrón crea diferentes familias de objetos. Su objetivo principal es soportar múltiples estándares que vienen definidos por las diferentes jerarquías de herencia de objetos. Es similar al Factory Method, sólo que esta orientado a combinar productos.
+__ Libera al desarrollador sobre la forma correcta de crear objetos. Define la interfaz de creación de un cierto tipo de objeto, permitiendo que las subclases decidan que clase concreta necesitan instancias.
+Muchas veces ocurre que una clase no puede anticipar el tipo de objetos que debe crear, ya que la jerarquía de clases que tiene requiere que deba delegar la responsabilidad a una subclase.
 
-Se debe utilizar este patrón cuando:
-Un sistema se debe configurar con una de entre varias familias de productos.
-Una familia de productos relacionados están hechos para utilizarse juntos.
+Este patrón debe ser utilizado cuando:
+Una clase no puede anticipar el tipo de objeto que debe crear y quiere que sus subclases especifiquen dichos objetos.
+Hay clases que delegan responsabilidades en una o varias subclases. Una aplicación es grande y compleja y posee muchos patrones creacionales.
 
 ## Model
 ![Model](Factory_Method.png)
