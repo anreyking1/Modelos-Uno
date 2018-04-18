@@ -15,7 +15,7 @@ Permite simplificar jerarquías demasiado pobladas." [GoF]
 
 
 ## Model
-![Model](Cadena de responsabilidades.PNG)
+  ![Model](Cadena de responsabilidades.PNG)
 
 ## Example
 
