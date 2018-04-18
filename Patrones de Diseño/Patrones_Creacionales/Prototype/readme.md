@@ -9,7 +9,7 @@ Aplica en un escenario donde sea necesario la creación de objetos parametrizado
 Este patrón debe ser utilizado cuando un sistema posea objetos con datos repetitivos, en cuanto a sus atributos: por ejemplo, si una biblioteca posee una gran cantidad de libros de una misma editorial, mismo idioma, etc. Hay que pensar en este patrón como si fuese un fábrica que tiene ciertas plantillas de ejemplos de sus prodcutos y, a partir de estos prototipos, puede crear una gran cantidad de productos con esas características.
 
 ## Model
-![Model](prototype.png)
+![Model](Prototype.png)
 
 ## Example
 
