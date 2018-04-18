@@ -14,7 +14,7 @@ Se desea compartir una implementación entre múltiples y este hecho debe ser es
 Permite simplificar jerarquías demasiado pobladas."
 
 ## Model
-![Model](bridge.png)
+![Model](Bridge.PNG)
 
 ## Example
 
