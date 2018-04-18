@@ -12,7 +12,7 @@ Se quiera desacoplar un subsistema de sus clientes y de otros subsistemas, haci�
 Se quiera dividir los sistemas en niveles: las fachadas serían el punto de entrada a cada nivel. Facade puede ser utilizado a nivel aplicación." [GoF]
 
 ## Model
-![Model](facade.png)
+![Model](fachade.png)
 
 ## Example
 
