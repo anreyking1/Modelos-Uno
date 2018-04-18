@@ -16,5 +16,155 @@ Esta patrón debe utilizarse cuando el algoritmo para crear un objeto suele ser 
 ## Example
 
 ### Codigo
-  ![functional](exercise/functional.png)
+<pre><code>
+/*
+ * Director del patron
+ */
+package patrones.creacionales.builder;
 
+/**
+ * 
+ * @author daza
+ */
+public class Agencia {
+    private ConstructorTour constructor;
+
+    public void setConstructor(ConstructorTour constructor) {
+        this.constructor = constructor;
+    }
+    
+    public Tour getTour(){
+        return constructor.getTour();
+    }
+    
+    public void construirTour(){
+        constructor.construirTour();
+        constructor.construirHoteles();
+        constructor.construirTickets();
+    }
+    
+}
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.creacionales.builder;
+
+/**
+ *
+ * @author daza
+ */
+public class BuguieTour extends ConstructorTour{
+    
+    @Override
+    public void construirTour() {
+        tour = new Tour();
+    }
+    
+    @Override
+    public void construirHoteles() {
+        tour.addHotel("Hilton");
+        tour.addHotel("Buckingham Palace");
+        tour.addHotel("Holiday Inn");
+    }
+
+    @Override
+    public void construirTickets() {
+        tour.addTicket("Caracas");
+        tour.addTicket("Londres");
+        tour.addTicket("Madrid");
+        
+    }
+    
+}
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.creacionales.builder;
+
+/**
+ *
+ * @author daza
+ */
+public abstract class ConstructorTour {
+    protected Tour tour;
+
+    public Tour getTour() {
+        return tour;
+    }
+    
+    public abstract void construirTour();
+    public abstract void construirHoteles();
+    public abstract void construirTickets();
+}
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.creacionales.builder;
+
+import java.util.Iterator;
+import patrones.Ejemplo;
+
+/**
+ *
+ * @author daza
+ */
+public class EjemploBuilder implements Ejemplo{
+
+    @Override
+    public void operacion() {
+        Agencia agencia = new Agencia();
+        agencia.setConstructor(new BuguieTour());
+        agencia.construirTour();
+        
+        Tour tour = agencia.getTour();
+        Iterator itHoteles = tour.getHoteles().listIterator();
+        Iterator itTickets = tour.getTickets().listIterator();
+        while(itHoteles.hasNext() ){
+            System.out.println(itTickets.next() + " en el " + itHoteles.next());
+        }
+    }
+    
+}
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.creacionales.builder;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author daza
+ */
+public class Tour {
+    private ArrayList<String> hoteles = new ArrayList<String>();
+    private ArrayList<String> tickets = new ArrayList<String>();
+    
+    public void addHotel(String h){
+        hoteles.add(h);
+    }
+    
+    public void addTicket(String t){
+        tickets.add(t);
+    }
+
+    public ArrayList<String> getHoteles() {
+        return hoteles;
+    }
+
+    public ArrayList<String> getTickets() {
+        return tickets;
+    }
+      
+    
+}
+
+<code>
