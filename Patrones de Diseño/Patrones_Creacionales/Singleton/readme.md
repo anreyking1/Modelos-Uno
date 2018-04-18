@@ -13,7 +13,7 @@ No debe utilizarse cuando una clase esta representando a un objeto que no es ún
 
 
 ## Model
-![Model](singleton.png)
+![Model](Singleton.png)
 
 
 ## Example
