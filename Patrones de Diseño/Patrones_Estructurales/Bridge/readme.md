@@ -12,7 +12,31 @@ Tanto las abstracciones como sus implementaciones deben ser extensibles por medi
 Cambios en la implementación de una abstracción no deben impactar en los clientes, es decir, su código no debe tener que ser recompilado.
 Se desea compartir una implementación entre múltiples y este hecho debe ser escondido a los clientes.
 Permite simplificar jerarquías demasiado pobladas."
+<pre><code>
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.estructurales.bridge;
 
+import patrones.Ejemplo;
+
+/**
+ *
+ * @author daza
+ */
+public class EjemploBridge implements Ejemplo{
+
+    @Override
+    public void operacion() {
+        Abstraction abstraction = new AbstractionOne("prueba", new ImplementorOne());
+        abstraction.operation();
+        abstraction = new AbstractionOne("prueba", new ImplementorTwo());
+        abstraction.operation();
+    }
+    
+}
+<pre><code>
 ## Model
 ![Model](Bridge.PNG)
 
