@@ -20,6 +20,32 @@ No se quiere que el objeto llamado tenga conocimientos de la otra clase de objet
 ### Structural Model
   ![structural](exercise/structural.png)
 <pre><code>
+package patrones.estructurales.adapter;
+
+import patrones.Ejemplo;
+
+/**
+ *
+ * @author daza
+ */
+public class EjemploAdapter implements Ejemplo{
+
+    @Override
+    public void operacion() {
+        System.out.println("Guitarra Electrica");
+        Guitarra eGuitarra = new GuitarraElectrica();
+        eGuitarra.onGuitar();
+        eGuitarra.offGuitar();
+        
+        System.out.println("Guitarra ElectroAcustica");
+        Guitarra eaGuitarra = new GuitarraElectroAcustica();
+        eaGuitarra.onGuitar();
+        eaGuitarra.offGuitar();
+    }
+    
+}
+<pre><code>
+<pre><code>
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -48,8 +74,8 @@ public class EjemploAdapter implements Ejemplo{
     }
     
 }
-
-
+<code>
+  <pre><code>
   /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -86,9 +112,8 @@ public class GuitarraAcustica {
         System.out.println("cansado de tocar guitarra");
     }
 }
-
-
-
+<code>
+  <pre><code>
   /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -111,9 +136,8 @@ public class GuitarraElectrica extends Guitarra {
         System.out.println("cansado de tocar guitarra");
     }
 }
-
-
-
+<code>
+  <pre><code>
   /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
