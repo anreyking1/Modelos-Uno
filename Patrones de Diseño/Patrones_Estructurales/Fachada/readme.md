@@ -14,11 +14,30 @@ Se quiera dividir los sistemas en niveles: las fachadas serían el punto de entr
 ## Model
 ![Model](fachade.png)
 
-## Example
+<pre><code>
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.estructurales.facade;
 
-### Functional Model
-  ![functional](exercise/functional.png)
+import patrones.Ejemplo;
 
-### Structural Model
-  ![structural](exercise/structural.png)
+/**
+ *
+ * @author daza
+ */
+public class EjemploFacade implements Ejemplo{
+
+    @Override
+    public void operacion() {
+        FachadaLibreria libreria = new FachadaLibreria();
+        System.out.println(libreria.buscarLibros());
+        System.out.println(libreria.buscarMusica());
+        System.out.println(libreria.buscarVideos());
+    }
+    
+}
+/<pre>
+/<code>
 >
