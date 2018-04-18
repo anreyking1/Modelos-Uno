@@ -49,3 +49,91 @@ public class EjemploAdapter implements Ejemplo{
     
 }
 <code>
+  <pre><code>
+  /*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.estructurales.adapter;
+
+/**
+ *
+ * @author daza
+ */
+public abstract class Guitarra {
+    abstract public void onGuitar();
+    abstract public void offGuitar();
+}
+<code>
+  <pre><code>
+  /*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.estructurales.adapter;
+
+/**
+ *
+ * @author daza
+ */
+public class GuitarraAcustica {
+
+    public void tocar() {
+        System.out.println("tocando guitarra");
+    }
+
+    public void dejar() {
+        System.out.println("cansado de tocar guitarra");
+    }
+}
+<code>
+  <pre><code>
+  /*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.estructurales.adapter;
+
+/**
+ *
+ * @author daza
+ */
+public class GuitarraElectrica extends Guitarra {
+
+    @Override
+    public void onGuitar() {
+        System.out.println("tocando guitarra");
+    }
+
+    @Override
+    public void offGuitar() {
+        System.out.println("cansado de tocar guitarra");
+    }
+}
+<code>
+  <pre><code>
+  /*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package patrones.estructurales.adapter;
+
+/**
+ *
+ * @author daza
+ */
+public class GuitarraElectroAcustica extends Guitarra{
+    GuitarraAcustica guitarra = new GuitarraAcustica();
+
+    @Override
+    public void onGuitar() {
+        guitarra.tocar();
+    }
+
+    @Override
+    public void offGuitar() {
+        guitarra.dejar();
+    }
+    
+}
+<code>
