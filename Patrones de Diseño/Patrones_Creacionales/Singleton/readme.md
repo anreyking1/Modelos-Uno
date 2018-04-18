@@ -23,3 +23,25 @@ No debe utilizarse cuando una clase esta representando a un objeto que no es ún
 
 ### Structural Model
   ![structural](exercise/java_model/structural.png)
+<pre><code>
+package patrones.creacionales.singleton;
+
+/**
+ *
+ * @author chamo
+ */
+public class Singleton {
+
+    private static Singleton instancia;
+
+    private Singleton() {
+    }
+
+    public static Singleton getInstancia() {
+        if (instancia == null) {
+            instancia = new Singleton();
+        }
+        return instancia;
+    }
+}
+</pre></code>
