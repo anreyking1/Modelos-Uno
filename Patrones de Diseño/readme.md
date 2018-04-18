@@ -25,11 +25,6 @@ En este proyecto describimos patrones de diseño Creacional y Estructural.
   - [Decorador](Patrones_Estructurales/Decorator/readme.md)
   - [Fachada](Patrones_Estructurales/Facade/readme.md)
 
-- [Concurrency Patterns](#)
-  - [Consistent Lock Order](#)
-  - [Critical Section](#)
-  - [Guarded Suspension](#)
-  - [Read-Write Lock](#)
 
 ## Notations
 
